@@ -34,6 +34,7 @@ class UpdatePostview(LoginRequiredMixin , UpdateView):
     login_url = '/login'
     model =Post
     form_class = PostForm
+    
 class POstDeleteView(LoginRequiredMixin , DeleteView):
     model =Post
     success_url = reverse_lazy('post_list')
